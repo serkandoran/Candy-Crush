@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+<style>
+body{
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+}
+
+.container{
+   background: rgb(65, 26, 26);
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: 100px auto;
+   width: 459px;
+   height: 509px;
+   border: 1px solid black;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   gap: 1px;
+}
+.container>div{
+   border-radius: 10%;
+   position: relative;
+   width: 50px;
+   height: 50px;
+   background: black;
+}
+.container>div::before{
+   content: '';
+   width: 15px;
+   height: 12px;
+   background: rgb(238, 238, 238);
+   position: absolute;
+   border-radius: 30%;
+   filter: blur(3px);
+   left: 3px;
+   top: 3px;
+}
+
+
+
+</style>
+</head>
+<body>
+   
+   <div class="container">
+   </div>
+
+
+<script src="candyCrush.js"></script>
+</body>
+</html>
+
+
